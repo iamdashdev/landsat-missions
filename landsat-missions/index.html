@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tezzor</title>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://unpkg.com/augmented-ui@2/augmented-ui.min.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<nav></nav>
+		<div class="container">
+			<div class="navigation-panel">
+				<button id="landsat1" class="sat-button parallelogram">
+					Landsat-1
+				</button>
+				<button id="landsat2" class="sat-button parallelogram">
+					Landsat-2
+				</button>
+				<button id="landsat3" class="sat-button parallelogram">
+					Landsat-3
+				</button>
+				<button id="landsat4" class="sat-button parallelogram">
+					Landsat-4
+				</button>
+				<button id="landsat5" class="sat-button parallelogram">
+					Landsat-5
+				</button>
+				<button id="landsat7" class="sat-button parallelogram">
+					Landsat-7
+				</button>
+				<button id="landsat8" class="sat-button parallelogram">
+					Landsat-8
+				</button>
+				<button id="landsat9" class="sat-button parallelogram">
+					Landsat-9
+				</button>
+			</div>
+			<div
+				class="sat-card"
+				data-augmented-ui="tl-clip br-clip tr-clip bl-clip both">
+				<div class="title-box">
+					<h1 class="sat-name" id="satName">Landsat-1</h1>
+					<div class="underline"></div>
+				</div>
+				<div class="content">
+					<div class="image">
+						<img
+							src="../static/assets/img/satellites/Landsat-1.svg"
+							alt="landsat"
+							id="satImage" />
+					</div>
+					<div class="sat-details" id="satDetails"></div>
+				</div>
+			</div>
+		</div>
+		<div class="charts">
+			<div class="chart-container">
+				<h2 class="timeline-title">
+					Landsat Missions: Imaging the Earth Since 1972
+				</h2>
+
+				<div
+					class="timeline-container"
+					data-augmented-ui="tl-clip br-clip tr-clip bl-clip both">
+					<div class="timeline" id="timeline">
+						<div class="year-axis" id="yearAxis"></div>
+						<div id="missions"></div>
+					</div>
+
+					<!-- <div class="legend" id="legend"></div> -->
+				</div>
+
+				<div class="tooltip" id="tooltip"></div>
+			</div>
+		</div>
+
+		<div class="commercial"></div>
+
+		<!-- Typed.js -->
+		<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+		<!-- Howler.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+		<script src="script.js"></script>
+		<script src="chart.js"></script>
+	</body>
+</html>
