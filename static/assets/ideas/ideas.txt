@@ -1,0 +1,15 @@
+Form input - 
+    -AOI
+    -Satellite imagery
+    -Bands Combination
+        -True color
+        -False color
+    -Spectral Indices
+        - NDVI
+        - NDBI
+        
+    -Functions
+        - Land cover classification
+        - Object detection and mapping
+        - Suitability Analysis - Arcpy
+        - 
